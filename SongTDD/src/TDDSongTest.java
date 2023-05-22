@@ -12,4 +12,13 @@ class TDDSongTest {
         String resultadoEsperado = "";
         assertEquals(resultadoEsperado, resultadoActual);
     }
+
+    @org.junit.jupiter.api.Test
+    void testGeneraCancionFly() {
+        listaAnimales.add("fly");
+        String resultadoActual = song.generaCancion(listaAnimales);
+        String resultadoEsperado = "There was an old lady who swallowed a fly.\n" +
+                "I don't know why she swallowed a fly - perhaps she'll die!\n" ;;
+        assertEquals(resultadoEsperado, resultadoActual);
+    }
 }

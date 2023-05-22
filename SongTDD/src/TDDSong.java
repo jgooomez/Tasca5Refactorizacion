@@ -22,7 +22,7 @@ public class TDDSong {
                 }
             }
 
-            cancion += "I don't know why she swallowed a " + animal + " - perhaps she'll die!\n\n";
+            cancion += "I don't know why she swallowed a " + animal + " - perhaps she'll die!\n";
         }
 
         return cancion;
