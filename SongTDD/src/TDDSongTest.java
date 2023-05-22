@@ -21,4 +21,14 @@ class TDDSongTest {
                 "I don't know why she swallowed a fly - perhaps she'll die!\n" ;;
         assertEquals(resultadoEsperado, resultadoActual);
     }
+
+    @org.junit.jupiter.api.Test
+    void testGeneraCancionSpider() {
+        listaAnimales.add("spider");
+        String resultadoActual = song.generaCancion(listaAnimales);
+        String resultadoEsperado = "There was an old lady who swallowed a spider.\n" +
+                "I don't know why she swallowed a spider - perhaps she'll die!\n" ;
+        assertEquals(resultadoEsperado, resultadoActual);
+    }
+
 }
